@@ -83,10 +83,7 @@ A second model (`model_m`) is trained to output **movie embedding vectors** ( v_
 Using these embedding vectors:
 
 * A **movie–movie distance matrix** is constructed using squared Euclidean distance
-$$
-  \text{dist}[i,j] = | v_m^{(i)} - v_m^{(j)} |^2.
-$$
-  
+\( \text{dist}[i,j] = \lVert v_m^{(i)} - v_m^{(j)} \rVert^2 \)
  
 * This matrix is then used for **content-based similarity search**, allowing us to retrieve the most similar movies to any given movie.
 
