@@ -83,6 +83,7 @@ A second model (`model_m`) is trained to output **movie embedding vectors** ( v_
 Using these embedding vectors:
 
 * A **movie–movie distance matrix** is constructed using squared Euclidean distance
+```math
   [
   \text{dist}[i,j] = | v_m^{(i)} - v_m^{(j)} |^2.
   ]
